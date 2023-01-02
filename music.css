@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+#left {
+    height: 100%;
+    width: 50%;
+    background-color: #abafaf;
+}
+
+#lnav {
+    padding: 25px;
+    display: flex;
+}
+
+#circle {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#circle p {
+    z-index: 99;
+    color: white;
+    padding: 13px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 12px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px
+}
+
+#search input {
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 30px;
+    color: black;
+    background-color: transparent;
+}
+
+#search i {
+    font-weight: 900;
+    font-size: 18p45
+}
+
+#star {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+
+    -webkit-clip-path: polygon(43% 4%, 60% 39%, 98% 13%, 64% 48%, 72% 84%, 55% 49%, 16% 73%, 17% 73%, 50% 43%);
+    clip-path: polygon(43% 4%, 60% 39%, 98% 13%, 64% 48%, 72% 84%, 55% 49%, 16% 73%, 17% 73%, 50% 43%);
+}
+
+#search ::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+
+#lcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 90px;
+ 
+
+}
+
+#inne h1 {
+    width: 400px;
+    font-size: 75px;
+    line-height: 69px;
+}
+
+#inne p {
+    margin-top: 28px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#inne {
+    width: 500px;
+    /* background-color: antiquewhite; */
+
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+
+}
+
+#btn button {
+    background-color: rgb(245, 121, 26);
+    padding: 10px 19px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
+
+}
+
+#btn #sec {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 5px 19px;
+    margin-left: 10px;
+}
+
+#btn #sec i {
+    font-size: 19px;
+}
+
+
+#right {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(49, 48, 48);
+}
+
+
+#rnav {
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    font-weight: 100;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#rnav h3 {
+
+
+    margin-top: 10px;
+    border-right: 2px solid white;
+    padding: 0px 60px;
+}
+
+#rnav #circle {
+    height: 41px;
+    width: 41px;
+    margin-top: 5px;
+    font-size: 13px;
+    margin-left: 40px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rnav #lline {
+
+    border-left: 2px solid white;
+    margin-left: 29px;
+}
+
+#right #yellowCard {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    width: 220px;
+    height: 300px;
+    background-color: rgb(245, 216, 84);
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 55;
+    overflow: hidden;
+}
+
+#right #yellowCard img {
+    position: absolute;
+    top: -35%;
+    left: -35%;
+    height: 450px;
+}
+
+#right #yellowCard h3 {
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+#right #blackCard {
+    color: white;
+    z-index: 5;
+    position: absolute;
+    top: 22%;
+    left: -4%;
+    display: flex;
+    justify-content: start;
+    width: 220px;
+    height: 200px;
+    background-color: rgb(62, 61, 61);
+    background: linear-gradient(to top, rgb(34, 34, 34), rgb(105, 104, 104), rgb(25, 24, 24));
+    border-radius: 20px;
+}
+
+#right #blackCard h3 {
+    margin: 20px;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#ccr {
+    position: relative;
+    position: absolute;
+    z-index: 4545;
+    bottom: 19%;
+    left: 40%;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    /* background-size: cover; */
+    background-position: 25%, 20%;
+    background-image: url(https://media.istockphoto.com/id/92889827/photo/cd-dvd-bottom.jpg?s=612x612&w=0&k=20&c=R8SRWc432ha-H4-355lyyEu9Mk1XyxqRIptTDobeZW8=);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#ccr #cle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    z-index: 91212333;
+    /* position: absolute; */
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#right #whiteCard {
+    /* z-index: 5; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 38%;
+    left: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 190px;
+    height: 180px;
+    background-color: rgb(200, 197, 197);
+    border-radius: 20px;
+}
+
+
+#right #whiteCard #txt {
+    margin-bottom: 10px;
+}
+
+#right #whiteCard h3 {
+    margin-top: 4px;
+}
+
+#right #whiteCard #txt h3 {
+
+    font-weight: 200;
+}
+
+
+#right #whiteCard #txt p {
+    font-size: 11px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#right #music {
+    width: 380px;
+    height: 140px;
+    z-index: 99;
+    background-color: rgba(165, 164, 164, 0.562);
+    position: absolute;
+    left: -11%;
+    bottom: 15%;
+    border-radius: 15px;
+
+}
+
+#right #music #upper {
+    padding: 10px 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#right #music #upper p{
+    margin-top: 25PX;
+    margin-left: -200pX;
+    font-weight: lighter;
+    color:rgb(82, 80, 80) ;
+
+
+  
+}
+#right #music #upper h4 {
+    color: white;
+}
+
+#right #music #rightUpper i {
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+#music #line {
+    width: 80%;
+    height: 7px;
+    background-color: rgb(75, 75, 75);
+    margin-top: 8px;
+    margin-left: 35px;
+    border-radius: 10px;
+}
+
+#music #line #inside {
+    width: 60%;
+    height: inherit;
+    background-color: white;
+}
+
+#music #icon {
+    margin: 20px 155px;
+}
+
+#music #icon i {
+    font-size: 20px;
+    color: white;
+}
